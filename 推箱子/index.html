@@ -24,6 +24,11 @@ body{
 		<input type="button" value="下一关" onClick="NextLevel(1)">
 		<input type="button" value="重玩本关" onClick="NextLevel(0)">
 		<input type="button" value="游戏说明" onClick="showHelp()">
+		<div style="width:100%; height:10px;"></div>
+		<input type="button" value="左" onClick="anniu(37)">&nbsp;&nbsp;
+		<input type="button" value="上" onClick="anniu(38)">&nbsp;&nbsp;
+		<input type="button" value="右" onClick="anniu(39)">&nbsp;&nbsp;
+		<input type="button" value="下" onClick="anniu(40)">&nbsp;&nbsp;
 	</div>
 
 <script src="js/mapdata100.js"></script>
@@ -261,6 +266,27 @@ body{
 	//与键盘上的上下左右键关联
 	function doKeyDown(event){
 		switch (event.keyCode)
+		{
+		case 37://左键头
+			go("left");
+			break;
+		case 38://上键头
+			go("up");
+			break;
+		case 39://右箭头
+			go("right");
+			break;
+		case 40://下箭头
+			go("down");
+			break;
+		}
+
+	}
+	
+	
+	//与键盘上的上下左右键关联
+	function anniu(g){
+		switch (g)
 		{
 		case 37://左键头
 			go("left");
