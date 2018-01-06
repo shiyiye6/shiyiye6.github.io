@@ -14,6 +14,13 @@ body{
 	width:560px;
 	margin:5px auto;
 }
+
+
+.anniu{
+	width:100%; 
+	padding: 10px 30px; 
+	text-align:center;
+}
 </style>
 </head>
 <body onkeydown="doKeyDown(event)"><!--身体-->
@@ -24,7 +31,9 @@ body{
 		<input type="button" value="下一关" onClick="NextLevel(1)">
 		<input type="button" value="重玩本关" onClick="NextLevel(0)">
 		<input type="button" value="游戏说明" onClick="showHelp()">
-		<div style="width:100%; padding: 10px 30px; text-align:center;">
+	</div>
+
+	<div class="anniu">
 			<table style="width: 300px; height: 100px; margin: auto auto;">
 				<tr>
 					<td></td>
@@ -43,7 +52,6 @@ body{
 				</tr>
 			</table>
 		</div>
-	</div>
 
 <script src="js/mapdata100.js"></script>
 <script>
