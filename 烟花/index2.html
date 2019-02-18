@@ -4,14 +4,33 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HTML5 Canvas烟花动画 随机色彩、高度和角度DEMO演示</title>
+<title>不一样的烟火</title>
 
 <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="css/demo.css">
 
+<style>
+	button{
+		position:absolute;
+		top: 20px;
+		font-size: 24px;
+		
+		border: 0;
+		margin: 0;
+		padding: 15px;
+		outline: none;
+		background: #333;
+		color: #fff;
+		z-index: 10000;
+	}
+</style>
+
 </head>
 <body>
-<!-- <h1 style="text-align: center;">绚丽的烟火送给美丽郭女侠！<br>祝：郭女侠的世界像烟花一样绚烂。</h1> -->
+
+<a href="javascript:history.go(-1)"><button>返回</button></a>
+
+<h1 style="text-align: center; z-index: 10000;">愿你的世界像烟花一样绚烂。</h1>
 <div class="demo"></div>
 <!-- 音乐 -->
 	<audio autoplay loop>

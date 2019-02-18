@@ -129,6 +129,7 @@ var colors = ["#bf1337","#f3f1f3","#084c8d","#f2d108","#efd282"];
 var bool = true;
 var current = 0,i;
 function changeText(text){
+  text = text.replace(/^\s+|\s+$/g,"");
   //烟花 s
   if (text == "小猪佩奇") {
     //window.location.href = "./烟花.html";
@@ -136,6 +137,12 @@ function changeText(text){
 
     setTimeout(function(){
       window.location.href = "./烟花.html";
+    }, 12000);
+  } else if (text == "田小雨") {
+	text = "愿你的世界像烟花一样绚烂";
+
+    setTimeout(function(){
+      window.location.href = "../烟花/index2.html";
     }, 12000);
   }
   //烟花 e
