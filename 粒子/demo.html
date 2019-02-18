@@ -129,7 +129,7 @@ var colors = ["#bf1337","#f3f1f3","#084c8d","#f2d108","#efd282"];
 var bool = true;
 var current = 0,i;
 function changeText(text){
-  //烟花
+  //烟花 s
   if (text == "小猪佩奇") {
     //window.location.href = "./烟花.html";
     text = "带你去看不一样的烟火！";
@@ -138,13 +138,14 @@ function changeText(text){
       window.location.href = "./烟花.html";
     }, 10000);
   }
+  //烟花 e
 
 
   var current = 0,temp,radius,color;
   cfill();
   ctx.fillStyle = "#fff";
   ctx.font = "120px Times";
-  ctx.fillText(text,can.width*0.5-ctx.measureText(text).width*0.5,can.height*0.5+60);
+  ctx.fillText(text,can.width*0.5-ctx.measureText(text).width*0.5,can.height*0.4);
   var data = ctx.getImageData(0,0,can.width,can.height).data;
   cfill();
   for(i = 0;i < data.length;i += 8){
