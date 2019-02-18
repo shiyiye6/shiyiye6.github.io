@@ -42,7 +42,7 @@
 </head>
 <body>
 	<div class = "control" style = "position:absolute">
-	    <input type = "text" value = "田小雨" id = "t">
+	    <input type = "text" value = "小猪佩奇" id = "t">
 	    <button onclick = "changeText(t.value)">
 	      确定
 	    </button>
@@ -129,6 +129,17 @@ var colors = ["#bf1337","#f3f1f3","#084c8d","#f2d108","#efd282"];
 var bool = true;
 var current = 0,i;
 function changeText(text){
+  //烟花
+  if (text == "小猪佩奇") {
+    //window.location.href = "./烟花.html";
+    text = "带你去看不一样的烟火！";
+
+    setTimeout(function(){
+      window.location.href = "./烟花.html";
+    }, 10000);
+  }
+
+
   var current = 0,temp,radius,color;
   cfill();
   ctx.fillStyle = "#fff";
@@ -165,10 +176,7 @@ function changeText(text){
 
 
 
-  //烟花
-  if (text == "小猪佩奇") {
-    window.location.href = "./烟花.html";
-  }
+  
 }
 function draw(){
   cfill();
@@ -177,7 +185,7 @@ function draw(){
    particles[i].draw();
  } 
 }
-changeText("小阿姨");
+changeText("元宵节快乐");
 setInterval(draw,1);</script>
 
 </body>
