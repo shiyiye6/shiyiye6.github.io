@@ -234,7 +234,7 @@ footer {
     }
 
     .close i:nth-of-type(2) {
-        opacity: 0;//透明度
+        opacity: 0;  /* 透明度 */
     }
 
     .close i:nth-of-type(3) {
