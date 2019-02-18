@@ -140,12 +140,27 @@ function changeText(text){
   }
   //烟花 e
 
+  //分割字符 s
+  wfont = Math.floor(can.width / 120);  //每行文字数
+  hangs = Math.ceil(text.length / wfont); //文字总行数
+
+  //str = text.substr(2,1);
+  //alert(hangs);
+  //分割字符 e
 
   var current = 0,temp,radius,color;
   cfill();
   ctx.fillStyle = "#fff";
   ctx.font = "120px Times";
-  ctx.fillText(text,can.width*0.5-ctx.measureText(text).width*0.5,can.height*0.4);
+
+  //输出文本循环
+  for (var i = 1; i <= hangs; i++) {
+    Rtext = text.substr((i - 1) * wfont, wfont); //输出文本
+    ctx.fillText(Rtext, can.width*0.5-ctx.measureText(Rtext).width*0.5, can.height*0.2*i);
+  }
+
+
+  //ctx.fillText(text,can.width*0.5-ctx.measureText(text).width*0.5,can.height*0.4);
   var data = ctx.getImageData(0,0,can.width,can.height).data;
   cfill();
   for(i = 0;i < data.length;i += 8){
