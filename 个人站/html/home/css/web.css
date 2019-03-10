@@ -250,7 +250,7 @@
 	}
 	.wid-title:after{
 		content: "";
-	    width: 40%;
+	    width: 8rem;
 	    height: 1px;
 	    background: #5abdf9;
 	    position: absolute;
@@ -275,7 +275,7 @@
 		color: #959595;
 	}
 	footer .widget{
-		width: 80rem;
+		max-width: 80rem;
 		margin: 0 auto;
 		background: none
 	}
