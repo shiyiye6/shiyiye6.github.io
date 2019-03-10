@@ -1,0 +1,80 @@
+/* 小插件 s */
+	
+	/** 三横 start **/
+	.nav-i{
+		display: inline-block;
+		margin-top: 26px;
+	}
+	.nav-i > i{
+		display: block;
+		width: 30px;
+		height: 2px;
+		background: #888;
+		margin: 6px auto;
+		transition-duration: 1s; /* transition效果需要指定多少秒或毫秒才能完成 */
+	}
+
+	/* 变化 样式 */
+	.nav-shift i:nth-of-type(1) {
+	    transform: translateY(8px) rotate(45deg);
+	}
+
+	.nav-shift i:nth-of-type(2) {
+	    opacity: 0;  /* 透明度 */
+	}
+
+	.nav-shift i:nth-of-type(3) {
+	    transform: translateY(-8px) rotate(-45deg);
+	}
+	/** 三横 end **/
+
+/* 小插件 e */
+
+/* 脑袋 s */
+/* 脑袋 e */
+
+/* 导航 s */
+	.nav-ul{
+       	width: 100%;
+       	margin-bottom: 30px;
+       	display: none;
+	}
+	
+	.nav-ul > .nav-li{
+		width: 90%;
+		padding: 0;
+		margin: 0 5%;
+		border-bottom: 1px #D0D0D0 solid;
+		text-align: left;
+	}
+	.nav-ul > .nav-li > a{
+		padding-left: 16px;
+	}
+
+	/* 下边框线 */
+	.nav-bottom{
+		background: #fff;
+		height: 20px;
+	}
+
+
+
+	/* 切换变化 s */
+	.nav-ul-active{ /* 切换显示 */
+		display: block;
+	}
+	.nav-active > a{ /* 当前页面导航变色 */
+		border-bottom: 2px solid #5abdf9;
+	}
+	/* 切换变化 e */
+/* 导航 e */
+
+/* 身体 s */
+	main, aside{
+		width: 100%;
+	}
+
+/* 身体 e */
+
+/* 尾巴 s */
+/* 尾巴 e */

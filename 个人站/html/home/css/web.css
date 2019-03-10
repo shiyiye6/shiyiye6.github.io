@@ -1,0 +1,311 @@
+/* 公共样式 s */
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, addrjsbk_less, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed,
+	figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, article, section, summary,
+	time, mark, audio, video, main, nav,hr, *{
+		margin: 0;
+		position: 0;
+		-webkit-padding-start: 0;
+		/*box-sizing: border-box;*/
+	}
+
+	html, body{
+		font-size: 16px;
+		background: #ebebeb;
+		color: #505050;
+	}
+
+	ul{
+		list-style-type: none;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+    /* 文字图标样式 */
+    .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+
+    .btn{
+    	border: 1px solid #5abdf9;
+	    background: #5abdf9;
+	    color: #fff;
+	    border-radius: 2px;
+	    box-sizing: border-box;
+	    font-size: 14px;
+    	font-weight: 400;
+    	text-align: center;
+    	margin-bottom: 7px;
+    	padding: 7px 14px;
+    }
+/* 公共样式 e */
+
+/* 脑袋 s */
+	header{
+		width: 100%; 
+		height: 200px; 
+		background-position: center 10%;
+	}
+/* 脑袋 e */
+
+/* 导航 s */
+	nav{
+		background: #fff;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.nav-ul{
+		max-width: 80rem;
+		margin: auto;
+	}
+	.nav-li{
+		display: inline-block;
+		padding: 0 30px;
+	}
+	.nav-li > a{
+		font-size: 14px; 
+		color: #9c9c9c;
+		font-weight: bold;
+		padding: 16px 0;
+		display: block;
+	}
+
+	.nav-active{ /* 当前页面导航变色 */
+		border-bottom: 2px solid #5abdf9;
+	}
+	.nav-active > a{ /* 当前页面导航变色 */
+		color: #5abdf9;
+	}
+
+	.nav-ul > li:hover{ /* 悬浮变色 */
+		border-bottom: 2px solid #5abdf9;
+	}
+	.nav-ul > li > a:hover{ /* 悬浮变色 */
+		color: #5abdf9;
+	}
+
+	/* 下边框线 */
+	.nav-bottom{
+		background: #e1e1e1; 
+		height: 2px; 
+		width: 100%; 
+		margin-top: -2px;
+	}
+/* 导航 e */
+
+/* 身体 s */
+	.content{
+		margin: 0 auto; 
+		width: 80rem; 
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+
+	/* 主体 s */
+	main{
+		width: 66.666%;
+		min-height: 300px;
+		padding: 0 15px;
+		box-sizing: border-box;
+	}
+
+	/* 区块列表 s */
+	section{
+		width: 100%;
+		position: relative;
+		padding: 35px;
+		margin-bottom: 35px;
+		box-sizing: border-box;
+	}
+
+	/* 文章背景 */
+    .art-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-size: cover;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    /* 文章样式 */
+    article{
+    	position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+
+    /* article{position:relative;}
+    	article:after, article:before{content:"";display:table;}
+    	article:after,article:before{clear:both;} */
+
+	.art-li{
+		margin-bottom: 20px;
+	}
+
+	/* 文章标题 */
+	.art-li h1{
+		font-weight: 400;
+		color: #303030;
+	}
+	
+	/* 作者 */
+	.art-meta{
+		color: #959595;
+		margin: 14px 0;
+		font-size: 14px;
+	}
+
+	.art-meta a{
+		color: #f4645f;
+		outline: 0;
+	}
+	
+	/* 文章封面 */
+	.art-cover img{
+		width: 100%;
+	}
+
+	/* 文章摘要 */
+	.art-area{
+		margin: 30px 0;
+	}
+
+	/* 文章结尾 */
+	.art-footer{
+		margin-top: 30px;
+    	border-top: 1px solid #ebebeb;
+    	padding: 21px 0 0;
+	}
+
+	/* 区块列表 e */
+
+
+	/* 主体 e */
+
+	/* 侧栏 s */
+	aside{
+		width: 33.333%;
+		min-height: 300px;
+		padding: 0 15px;
+		box-sizing: border-box;
+	}
+
+	.widget{
+		width: 100%;
+		background: #fff;
+    	padding: 21px 30px;
+    	margin-bottom: 35px;
+    	box-sizing: border-box;
+	}
+
+	/* 个人中心 */
+	
+	/* 头像 */
+	.wid-personal{
+		width: 120px;
+		height: 120px;
+		margin: 0 auto;
+	}
+	.wid-personal > img{
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+
+	/* 昵称 */
+	.wid-nick{
+		text-align: center;
+		margin-top: 30px;
+	}
+
+
+	/* 文章类目 */
+	.wid-title{
+		margin-top: 0;
+	    padding-bottom: 7px;
+	    border-bottom: 1px solid #ebebeb;
+	    margin-bottom: 21px;
+	    position: relative;
+	    font-size: 1.5em;
+	    font-weight: 400;
+	}
+	.wid-title:after{
+		content: "";
+	    width: 40%;
+	    height: 1px;
+	    background: #5abdf9;
+	    position: absolute;
+	    left: 0;
+	    bottom: -1px;
+	}
+
+	/* 类目跳转按钮 */
+	.wid-btn{
+    	width: 100%;
+    	display: block;
+	}
+
+	/* 侧栏 e */
+
+/* 身体 e */
+
+/* 尾巴 s */
+	footer{
+		width: 100%;
+		background: #202020;
+		color: #959595;
+	}
+	footer .widget{
+		width: 80rem;
+		margin: 0 auto;
+		background: none
+	}
+	footer .wid-title{
+		font-size: 1em;
+		margin-bottom: 7px;
+		border-bottom: 1px solid #303030;
+	}
+	footer a{
+		margin-right: 20px;
+	}
+/* 尾巴 e */
+
+/* 备案 s */
+	.record{
+		background: #111;
+		font-size: 13px;
+		text-align: center;
+		color: #555;
+		padding: 28px 0;
+		border-top: 1px solid #303030;
+	}
+/* 备案 e */
+
+
+
+/* 页面宽度小于1300px 变化样式 s */
+	@media screen and (max-width: 80rem){
+		.content {
+		    width: 100%;
+		}
+	}
+/* 页面宽度小于1300px 变化样式 e */
