@@ -14,28 +14,30 @@
 	<!-- js 文件 -->
 	<script src="./home/js/jquery.js"></script> <!-- 引入 jquery文件 -->
 </head>
+
 <body>
 	<!--脑袋 s-->
-	<header style="background-image: url('./home/img/33.jpg');"></header>
+	<header style="background-image: url('./home/img/33.jpg'); background-attachment:fixed;"></header>
 	<!--脑袋 e-->
 
 	<!--导航 s-->
 	<nav>
 		<!-- 导航三横 start -->
-            <label class="nav-i">
-                <i></i>
-                <i></i>
-                <i></i>
-            </label>
+        <label class="nav-i">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
         <!-- 导航三横 end -->
 
         <!-- 导航 -->
-			<ul class="nav-ul"> <!-- nav-active -->
-					<li class="nav-li"><a href="">首页</a></li>
-					<li class="nav-li"><a href="">服务</a></li>
-					<li class="nav-li"><a href="">解决方案</a></li>
-					<li class="nav-li"><a href="">关于我们</a></li>
-			</ul>
+		<ul class="nav-ul"> <!-- nav-active -->
+			<li class="nav-li"><a href="">首页</a></li>
+			<li class="nav-li"><a href="">服务</a></li>
+			<li class="nav-li"><a href="">留言</a></li>
+			<li class="nav-li"><a href="">试验基地</a></li>
+			<li class="nav-li"><a href="">关于我</a></li>
+		</ul>
 		<!-- 导航 e -->
 
 		<!-- 下边框 -->
@@ -50,7 +52,7 @@
 			<!--区块列表 s-->
 			<section>
 				<!--背景 s-->
-				<div class="art-bg" style="background-image: url('');background-attachment:fixed;"></div>
+				<div class="art-bg" style="background-image: url('./home/img/33.jpg');background-attachment:fixed;"></div>
 				<!--背景 e-->
 
 				<!--文章 s-->
@@ -58,10 +60,15 @@
 					<!-- 文章头部 s -->
 					<div class="art-li" style="text-align: center;">
 						<!-- 标题 -->
-						<h1>文章标题</h1>
+						<h1><a href="">文章标题</a></h1>
+
+						<!-- 栏目 -->
+						<div class="art-meta">
+							【 <a href="">文学</a> 】
+						</div>
 
 						<!-- 作者 日期 -->
-						<div class="art-meta">
+						<div class="art-meta wid-nick-a">
 							<span>作者：</span>
 							<a href="">北冥有鱼</a>
 							<span> • </span>
@@ -107,7 +114,7 @@
 					<!-- 文章头部 s -->
 					<div class="art-li" style="text-align: center;">
 						<!-- 标题 -->
-						<h1>文章标题</h1>
+						<h1><a href="">文章标题</a></h1>
 
 						<!-- 作者 日期 -->
 						<div class="art-meta">
@@ -155,7 +162,7 @@
 					<img src="./home/img/personal/personal.jpg" alt="">
 				</div>
 
-				<div class="wid-nick">
+				<div class="wid-nick wid-nick-a">
 					<a href="">北冥有鱼</a>
 				</div>
 			</div>
@@ -164,15 +171,14 @@
 
 			<!-- 文章类目 s -->
 			<div class="widget">
-				<h4 class="wid-title">文章类目</h4>
+				<h4 class="wid-title">文章栏目</h4>
 
 				<a href="" class="btn wid-btn">文学</a>
-				<a href="" class="btn wid-btn">文学</a>
-				<a href="" class="btn wid-btn">文学</a>
-				<a href="" class="btn wid-btn">文学</a>
-				<a href="" class="btn wid-btn">文学</a>
-				<a href="" class="btn wid-btn">文学</a>
-				<a href="" class="btn wid-btn">文学</a>
+				<a href="" class="btn wid-btn">历史</a>
+				<a href="" class="btn wid-btn">互联网技术</a>
+				<a href="" class="btn wid-btn">旅游</a>
+				<a href="" class="btn wid-btn">健康医疗</a>
+				<a href="" class="btn wid-btn">其他</a>
 			</div>
 			<!-- 文章类目 e -->
 		</aside>
