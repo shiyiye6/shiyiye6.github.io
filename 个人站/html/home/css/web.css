@@ -236,6 +236,9 @@
 		text-align: center;
 		margin-top: 30px;
 	}
+	.wid-nick a{
+		color: #5abdf9;
+	}
 
 
 	/* 文章类目 */
