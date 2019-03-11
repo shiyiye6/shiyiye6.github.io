@@ -1,3 +1,5 @@
+/* @北冥有鱼 */
+
 /* 公共样式 s */
 	html, body, div, span, applet, object, iframe,
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -56,15 +58,22 @@
 /* 公共样式 e */
 
 /* 脑袋 s */
-	header{
+	.bm-header{
 		width: 100%; 
-		height: 200px; 
+		padding: 80px 0;
 		background-position: center 20%;
+		text-align: center;
+	}
+
+	.h-title{
+		color: #fff;
+		font-size: 3em;
+		font-weight: 400;
 	}
 /* 脑袋 e */
 
 /* 导航 s */
-	nav{
+	.bm-nav{
 		background: #fff;
 		text-align: center;
 		width: 100%;
@@ -119,7 +128,7 @@
 	
 
 	/* 主体 s */
-	main{
+	.bm-main{
 		width: 66.666%;
 		min-height: 300px;
 		padding: 0 15px;
@@ -127,7 +136,7 @@
 	}
 
 	/* 区块列表 s */
-	section{
+	.bm-section{
 		width: 100%;
 		position: relative;
 		padding: 35px;
@@ -148,7 +157,7 @@
     }
 
     /* 文章样式 */
-    article{
+    .bm-article{
     	position: relative;
         z-index: 1;
         width: 100%;
@@ -204,7 +213,7 @@
 	/* 主体 e */
 
 	/* 侧栏 s */
-	aside{
+	.bm-aside{
 		width: 33.333%;
 		min-height: 300px;
 		padding: 0 15px;
@@ -274,22 +283,22 @@
 /* 身体 e */
 
 /* 尾巴 s */
-	footer{
+	.bm-footer{
 		width: 100%;
 		background: #202020;
 		color: #959595;
 	}
-	footer .widget{
+	.bm-footer .widget{
 		max-width: 80rem;
 		margin: 0 auto;
 		background: none
 	}
-	footer .wid-title{
+	.bm-footer .wid-title{
 		font-size: 1em;
 		margin-bottom: 7px;
 		border-bottom: 1px solid #303030;
 	}
-	footer a{
+	.bm-footer a{
 		margin-right: 20px;
 	}
 /* 尾巴 e */
